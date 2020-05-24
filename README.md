@@ -28,6 +28,15 @@ go build
 
 ### Usage
 
+Linux:
+
 ```
-fake-image-generator-go -size=15500 -extension=png -output=C:/
+ $GOPATH/bin/fake-image-generator-go.exe -size=15500 -extension=png -output=/home/
 ```
+
+Windows:
+
+```
+
+```
+
