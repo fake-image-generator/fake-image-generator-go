@@ -8,7 +8,6 @@ import (
 	"flag"
 	"fmt"
 	"io/ioutil"
-	"path/filepath"
 	"strconv"
 
 	_ "github.com/fake-image-generator/fake-image-generator-go/statik"
@@ -33,8 +32,8 @@ func main() {
 	bytes := make([]byte, i)
 
 	s, _ := fs.New()
-	file := filepath.FromSlash(fmt.Sprintf("/Untitled.%s", *extension))
-	fmt.Println(file)
+	file := fmt.Sprintf("//Untitled.%s", *extension)
+
 	f, err := s.Open(file)
 	check(err)
 
