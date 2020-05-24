@@ -1,13 +1,16 @@
+//go:generate statik -include=*.jpg,*.png
+
 // Small utility that generates a fake JPG or PNG image in any size between 1 KB and 2 GB.
 package main
 
 import (
+    _ "github.com/fake-image-generator/fake-image-generator-go/statik"
 	"errors"
 	"flag"
 	"fmt"
 	"io/ioutil"
-	"os"
 	"strconv"
+	"github.com/rakyll/statik/fs"
 )
 
 func main() {
@@ -27,7 +30,8 @@ func main() {
 
 	bytes := make([]byte, i)
 
-	f, err := os.Open(fmt.Sprintf("Untitled.%s", *extension))
+	s, _ := fs.New()
+	f, err := s.Open(fmt.Sprintf("Untitled.%s", *extension))
 	check(err)
 
 	buffer := make([]byte, 600)
