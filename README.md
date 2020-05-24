@@ -1,5 +1,5 @@
 # fake-image-generator-go
-[![GoDoc](https://godoc.org/github.com/fake-image-generator/fake-image-generator-go?status.svg)](https://godoc.org/github.com/fake-image-generator/fake-image-generator-go)![Go version](https://img.shields.io/github/go-mod/go-version/fake-image-generator/fake-image-generator-go) [![Github Actions](https://img.shields.io/github/workflow/status/fake-image-generator/fake-image-generator-go/Go)](https://github.com/fake-image-generator/fake-image-generator-go/actions?query=workflow%3AGo)
+[![GoDoc](https://godoc.org/github.com/fake-image-generator/fake-image-generator-go?status.svg)](https://godoc.org/github.com/fake-image-generator/fake-image-generator-go) ![Go version](https://img.shields.io/github/go-mod/go-version/fake-image-generator/fake-image-generator-go) [![Github Actions](https://img.shields.io/github/workflow/status/fake-image-generator/fake-image-generator-go/Go)](https://github.com/fake-image-generator/fake-image-generator-go/actions?query=workflow%3AGo)
 
 
 
