@@ -4,12 +4,13 @@
 package main
 
 import (
-    _ "github.com/fake-image-generator/fake-image-generator-go/statik"
 	"errors"
 	"flag"
 	"fmt"
 	"io/ioutil"
 	"strconv"
+
+	_ "github.com/fake-image-generator/fake-image-generator-go/statik"
 	"github.com/rakyll/statik/fs"
 )
 
@@ -31,7 +32,9 @@ func main() {
 	bytes := make([]byte, i)
 
 	s, _ := fs.New()
-	f, err := s.Open(fmt.Sprintf("Untitled.%s", *extension))
+	file := fmt.Sprintf("/Untitled.%s", *extension)
+
+	f, err := s.Open(file)
 	check(err)
 
 	buffer := make([]byte, 600)
