@@ -32,7 +32,7 @@ func main() {
 	bytes := make([]byte, i)
 
 	s, _ := fs.New()
-	file := fmt.Sprintf("/Untitled.%s", *extension)
+	file := fmt.Sprintf("\\Untitled.%s", *extension)
 
 	f, err := s.Open(file)
 	check(err)
