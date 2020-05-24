@@ -19,24 +19,15 @@ This utility was tested in Go 1.13.4.
 go install github.com/fake-image-generator/fake-image-generator-go
 ```
 
+### Usage
+
+```
+fake-image-generator-go.exe -size=15500 -extension=png -output=.
+```
+
 ### Build
 
 ```
 go get -d ./...
 go build
 ```
-
-### Usage
-
-Linux:
-
-```
- $GOPATH/bin/fake-image-generator-go.exe -size=15500 -extension=png -output=/home/
-```
-
-Windows:
-
-```
-
-```
-
